@@ -2,10 +2,12 @@
 
 build: build-stamp
 build-stamp:
+	emacs -Q -L . --batch -l doc/yas-doc-helper.el -f yas--generate-html-batch
 	dh build
 	touch build-stamp
 
 clean:
+	-rm doc/*html doc/html-revision
 	dh clean
 
 install: build install-stamp

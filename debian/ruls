@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_clean:
+	-rm doc/*.html doc/html-revision
+
+override_dh_binary:
+	3

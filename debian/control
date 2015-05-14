@@ -2,14 +2,14 @@ Source: yasnippet
 Section: lisp
 Priority: extra
 Maintainer: Julián Hernández Gómez <julianhernandez@gmail.com>
-Build-Depends: debhelper (>= 7)
-Standards-Version: 3.8.4
-Homepage: http://code.google.com/p/yasnippet/
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/capitaomorte/yasnippet
 
 Package: yasnippet
 Architecture: any
-Depends: emacs | emacsen, ${misc:Depends}
-Description: A template system for Emacs
+Depends: emacs | emacsen, yasnippet-snippets, ${misc:Depends}
+Description: Template system for Emacs
  YASnippet (yet another snippet extension for Emacs) is a template
  system for Emacs. It allows you to type an abbrevation and
  automatically expand the abbreviation into function templates.
